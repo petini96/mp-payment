@@ -1,0 +1,81 @@
+{
+    //service
+    "additional_info": "Pode haver cancelamento do evento.",
+    //service
+    //config
+    "auto_return": "approved",
+    "back_urls": {
+        "success": "http://localhost/ecotrio/payment/success.php",
+        "pending": "http://localhost/ecotrio/payment/pending.php",
+        "failure": "http://localhost/ecotrio/payment/failure.php"
+    },
+    "date_of_expiration": "2022-05-23T00:00:00",
+    //config
+    //config/??caso tenha
+    "differential_pricing": {
+        "id": 122
+    },
+    //config/??caso tenha
+    //config
+    "expiration_date_from": "2022-05-19T00:00:00",
+    "expiration_date_to": "2022-05-25T00:00:00",
+    "expires": true,
+    "external_reference": "777",
+    //config
+    //services
+    "items": [
+        {
+            "id": "534",
+            "title": "Turismo CROAS",
+            "description": "Um ótimo passeio para realizar com a família",
+            "picture_url": "https://ecotrip.misterdesenvolvimento.com.br:5000/storage/tour/tour_default_2.jpeg",
+            "category_id": "travels",
+            "quantity": 1,
+            "currency_id": "BRL",
+            "unit_price": 85.99
+        }
+    ],
+    "metadata": {
+        "responsible": "Dev. Vinícius",
+        "register": "554"
+    },
+    //services
+    //config
+    "notification_url": "http://localhost/apostola-raquel-santos/payment/notification.php",
+    //config
+    //service
+    "payer": {
+        "name": "Cliente Exemplo",
+        "surname": "Sr.Cliente",
+        "email": "vspetini@gmail.com",
+        "phone": {
+            "area_code": "67",
+            "number": "984087417"
+        },
+        "identification": {
+            "type": "CPF",
+            "number": "04942179106"
+        },
+        "address": {
+            "zip_code": "79005030",
+            "street_name": "Domingos Tenuta",
+            "street_number": "534"
+        },
+        "date_created": "2022-05-19T11:20:22"
+    },
+    //service
+    //config
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {"id":"debcabal"}
+        ],
+        "excluded_payment_types": [
+            {"id":"debit_card"}
+        ],
+        "default_payment_method_id": "pix",
+        "installments": 10,
+        "default_installments": 1
+    },
+    "statement_descriptor": "ECOTRIP Tour CROAS"
+    //config
+}
